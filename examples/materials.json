@@ -1,0 +1,10 @@
+{
+  "SunGear":      { "color": "#c67a2e", "specular": 0.55, "shininess": 42 },
+  "RingGear":     { "color": "#2b3340", "specular": 0.60, "shininess": 55 },
+  "PlanetGear_1": { "color": "#a3aab3", "specular": 0.70, "shininess": 60 },
+  "PlanetGear_2": { "color": "#a3aab3", "specular": 0.70, "shininess": 60 },
+  "PlanetGear_3": { "color": "#a3aab3", "specular": 0.70, "shininess": 60 },
+  "Carrier":      { "color": "#8c6638", "specular": 0.50, "shininess": 40 },
+  "OutputShaft":  { "color": "#ccd1d6", "specular": 0.85, "shininess": 80 },
+  "Cover":        { "color": "#b8bfc7", "specular": 0.55, "shininess": 50 }
+}

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fcrender"
+version = "0.1.0"
+description = "Headless still renderer for FreeCAD and STL models: numpy z-buffer, transparent PNG, no OpenGL, no X11, no GUI."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Orinkle" }]
+keywords = ["freecad", "cad", "renderer", "headless", "stl", "z-buffer", "visualization"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Multimedia :: Graphics :: 3D Rendering",
+]
+dependencies = ["numpy>=1.22", "pillow>=9.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+fcrender = "fcrender.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Orinkle/freecad-headless-render"
+Issues = "https://github.com/Orinkle/freecad-headless-render/issues"
+
+[tool.setuptools]
+packages = ["fcrender"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
